@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ui.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:paddingTop="5dp"
+        android:layout_height="150dp"
+        android:layout_gravity="right"
+        android:src="@drawable/shakira_horizontal"/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:shrinkColumns="0"
+        android:stretchColumns="1">
+        <TableRow android:paddingBottom="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:paddingRight="2dp"
+                android:layout_gravity="right|bottom"
+                android:text="Shakira"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:layout_gravity="left|bottom"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold"
+                android:text="Isabel" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/MainPageTextLabel"
+                android:text="Born: "/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/MainPageTextContent"
+                android:text="February 2nd, 1977"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/MainPageTextLabel"
+                android:text="Likes: "/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/MainPageTextContent"
+                android:text="Music, Dance, Food and Sleep :)"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/MainPageTextLabel"
+                android:text="Dislikes: "/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/MainPageTextContent"
+                android:text="Racism and Bigotry"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/MainPageTextLabel"
+                android:text="HomePage: "/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/MainPageTextContent"
+                android:text="http://www.shakira.com/home"
+                android:autoLink="web"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/MainPageTextLabel"
+                android:text="Phone Number: "/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/MainPageTextContent"
+                android:text="(212) 292-8500"
+                android:autoLink="phone"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/MainPageTextLabel"
+                android:text="E-mail: "/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/MainPageTextContent"
+                android:text="shakira@music.com"
+                android:autoLink="email"/>
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Follow me on a musical journey...."
+        android:textColor="@color/colorAccent"
+        android:paddingTop="10dp"
+        android:paddingLeft="5dp"
+        android:paddingBottom="10dp"
+        android:textStyle="bold"
+        android:textSize="15sp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_gravity="right">
+        <ImageView android:src="@drawable/twitter"
+            android:id="@+id/twitter"
+            style="@style/SocialMediaIcons"
+            android:contentDescription="twitter"/>
+
+        <ImageView android:src="@drawable/facebook"
+            android:id="@+id/facebook"
+            style="@style/SocialMediaIcons"
+            android:contentDescription="facebook"/>
+
+        <ImageView android:src="@drawable/youtube"
+            android:id="@+id/youtube"
+            style="@style/SocialMediaIcons"
+            android:contentDescription="youtube"/>
+    </LinearLayout>
+
+</LinearLayout>

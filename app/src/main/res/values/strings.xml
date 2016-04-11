@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Shakira</string>
+    <string name="SendToEmail">Send TO:  </string>
+    <string name="EmailSubject">Subject:  </string>
+    <string name="EmailMessage">Message:  </string>
+    <string name="TejalEmailSend">tejalshah84@gmail.com</string>
+    <string name="SubjectJoinList">Join Mailing List</string>
+    <string name="SendEmailButtonText">Send Message</string>
+    <string name="EmailBody">Please add me to the mailing list.</string>
+    <string name="EmailName">Email</string>
+</resources>
